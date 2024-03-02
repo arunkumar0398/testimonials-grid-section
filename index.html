@@ -17,6 +17,15 @@
     tailwind.config = {
       theme: {
         extend: {
+          fontFamily: {
+            'Barlow_Semi_Condensed': ['Barlow Semi Condensed', 'sans-serif'],
+          },
+          margin: {
+            '300px': '-300px'
+          },
+          right: {
+            '110px': '110px'
+          },
           colors: {
             primary: 'hsl(210, 46%, 95%)',
             clifford: 'hsl(263, 55%, 52%)',
@@ -39,25 +48,25 @@
 </head>
 <body class="bg-primary">
 
-  <div class="ml-6 mt-20 mb-10 lg:mx-32 lg:flex">
+  <div class="ml-6 mt-20 mb-10 lg:mt-16 lg:mb-10 lg:mx-32 lg:flex lg:flex-row lg:flex-wrap">
 
     <!-- Daniel Clifford -->
-    <div class="p-8 w-80 lg:w-5/12 bg-clifford rounded-lg relative">
-      <img src="./images/bg-pattern-quotation.svg" alt="quote-pattern" class="absolute w-100 h-100 top-3 right-3 opacity-70">
+    <div class="p-8 w-80 lg:w-6/12 bg-clifford rounded-lg relative">
+      <img src="./images/bg-pattern-quotation.svg" alt="quote-pattern" class="absolute w-100 h-100 top-3 right-3 lg:right-[110px] opacity-70">
       <div class="flex mb-4 z-20">
-          <img src="./images/image-daniel.jpg" alt="daniel-clifford" class="rounded-full w-10 h-10">
+          <img src="./images/image-daniel.jpg" alt="daniel-clifford" class="rounded-full w-10 h-10 border-solid border-2 border-clifford">
           <div class="ml-3">
-            <span class="text-xs text-gray">Daniel Clifford</span>
-            <span class="block text-xs text-grayishBlue opacity-50">Verified Graduate</span>
+            <span class="text-xs text-gray font-['Barlow_Semi_Condensed']">Daniel Clifford</span>
+            <span class="block text-xs text-grayishBlue opacity-50 font-['Barlow_Semi_Condensed']">Verified Graduate</span>
           </div>
       </div>
 
-      <p class="text-lg text-kira lg:text-xl font-medium">
+      <p class="text-lg text-kira lg:text-xl font-medium font-['Barlow_Semi_Condensed']">
         I received a job offer mid-course, and the subjects I learned were current, if not more so, 
         in the company I joined. I honestly feel I got every penny’s worth.
       </p>
 
-      <p class="text-grayishBlue text-xs opacity-70 mt-4">
+      <p class="text-grayishBlue text-xs opacity-70 mt-4 leading-5 font-['Barlow_Semi_Condensed']">
         “ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a 
         transition and have heard some people who had an amazing experience here. I signed up 
         for the free intro course and found it incredibly fun! I enrolled shortly thereafter. 
@@ -67,40 +76,40 @@
     </div>
 
     <!-- Jonathan Walters -->
-    <div class="p-8 w-80 bg-jonathan rounded-lg ml-0 mt-4 lg:mt-0 lg:ml-4">
+    <div class="p-8 w-80 bg-jonathan rounded-lg ml-0 mt-4 lg:w-3/12 lg:mt-0 lg:ml-6">
       <div class="flex mb-4">
         <img src="./images/image-jonathan.jpg" alt="jonathan-walters" class="rounded-full w-10 h-10">
         <div class="ml-3">
-          <span class="text-xs text-gray">Jonathan Walters</span>
-          <span class="block text-xs text-grayishBlue opacity-50">Verified Graduate</span>
+          <span class="text-xs text-gray font-['Barlow_Semi_Condensed']">Jonathan Walters</span>
+          <span class="block text-xs text-grayishBlue opacity-50 font-['Barlow_Semi_Condensed']">Verified Graduate</span>
         </div>
       </div>
 
-      <p class="text-lg text-kira lg:text-xl font-medium">
+      <p class="text-lg text-kira lg:text-xl font-medium font-['Barlow_Semi_Condensed']">
         The team was very supportive and kept me motivated
       </p>
 
-      <p class="text-grayishBlue text-xs opacity-70 mt-4">
+      <p class="text-grayishBlue text-xs opacity-70 mt-4 leading-5 font-['Barlow_Semi_Condensed']">
         “ I started as a total newbie with virtually no coding skills. I now work as a mobile engineer 
           for a big company. This was one of the best investments I’ve made in myself. ”
       </p>
     </div>
 
     <!-- Jeanette Harmon -->
-    <div class="p-8 w-80 bg-kira rounded-lg ml-0 mt-4 lg:mt-0 lg:ml-4">
+    <div class="p-8 w-80 bg-kira rounded-lg ml-0 mt-4 lg:mt-4 lg:w-3/12 lg:ml-0">
       <div class="flex mb-4">
         <img src="./images/image-jeanette.jpg" alt="Jeanette-Harmon" class="rounded-full w-10 h-10">
         <div class="ml-3">
-          <span class="text-xs text-jonathan">Jeanette Harmon</span>
-          <span class="block text-xs text-gray opacity-100">Verified Graduate</span>
+          <span class="text-xs text-jonathan font-['Barlow_Semi_Condensed']">Jeanette Harmon</span>
+          <span class="block text-xs text-gray opacity-100 font-['Barlow_Semi_Condensed']">Verified Graduate</span>
         </div>
       </div>
 
-      <p class="text-lg text-jonathan lg:text-xl font-medium">
+      <p class="text-lg text-jonathan lg:text-xl font-medium font-['Barlow_Semi_Condensed']">
         An overall wonderful and rewarding experience
       </p>
 
-      <p class="text-jonathan font-medium text-xs opacity-70 mt-4">
+      <p class="text-jonathan font-medium text-xs opacity-70 mt-4 leading-5 font-['Barlow_Semi_Condensed']">
         “ Thank you for the wonderful experience! I now have a job I really enjoy, and make a good living 
         while doing something I love. ”
       </p>
@@ -108,21 +117,21 @@
 
 
     <!--  Patrick Abrams -->
-    <div class="p-8 w-80 bg-patrick rounded-lg ml-0 mt-4 lg:mt-0 lg:ml-4">
+    <div class="p-8 w-80 bg-patrick rounded-lg ml-0 mt-4 lg:mt-4 lg:w-6/12 lg:mt-0 lg:ml-4">
       <div class="flex mb-4">
-        <img src="./images/image-patrick.jpg" alt="Patrick Abrams" class="rounded-full w-10 h-10">
+        <img src="./images/image-patrick.jpg" alt="Patrick Abrams" class="rounded-full w-10 h-10 border-solid border-clifford border-2">
         <div class="ml-3">
-          <span class="text-xs text-gray"> Patrick Abrams</span>
-          <span class="block text-xs text-gray opacity-50">Verified Graduate</span>
+          <span class="text-xs text-gray font-['Barlow_Semi_Condensed']"> Patrick Abrams</span>
+          <span class="block text-xs text-gray opacity-50 font-['Barlow_Semi_Condensed']">Verified Graduate</span>
         </div>
       </div>
 
-      <p class="text-lg text-grayishBlue lg:text-xl font-medium">
+      <p class="text-lg text-grayishBlue lg:text-md font-medium font-['Barlow_Semi_Condensed']">
         Awesome teaching support from TAs who did the bootcamp themselves. Getting guidance from them and 
         learning from their experiences was easy.
       </p>    
 
-      <p class="text-gray font-medium text-xs opacity-70 mt-4">
+      <p class="text-gray font-medium text-xs opacity-70 mt-4 leading-5 font-['Barlow_Semi_Condensed']">
         “ The staff seem genuinely concerned about my progress which I find really refreshing. The program 
       gave me the confidence necessary to be able to go out in the world and present myself as a capable 
       junior developer. The standard is above the rest. You will get the personal attention you need from 
@@ -132,20 +141,20 @@
     </div>
 
     <!-- Kira  Whittle-->
-    <div class="p-8 w-80 bg-kira rounded-lg ml-0 mt-4 lg:mt-0 lg:ml-4">
+    <div class="p-8 w-80 bg-kira grow rounded-lg ml-0 mt-4 lg:w-1/12 lg:ml-5 lg:-mt-[300px]">
       <div class="flex mb-4">
         <img src="./images/image-kira.jpg" alt="daniel-clifford" class="rounded-full w-10 h-10">
         <div class="ml-3">
-          <span class="text-xs text-jonathan">Kira Whittle</span>
-          <span class="block text-xs text-gray opacity-70">Verified Graduate</span>
+          <span class="text-xs text-jonathan font-['Barlow_Semi_Condensed']">Kira Whittle</span>
+          <span class="block text-xs text-gray opacity-70 font-['Barlow_Semi_Condensed']">Verified Graduate</span>
         </div>
       </div>
 
-      <p class="text-lg text-jonathan lg:text-xl font-medium">
+      <p class="text-lg text-jonathan lg:text-xl font-medium font-['Barlow_Semi_Condensed']">
         Such a life-changing experience. Highly recommended!
       </p>    
 
-      <p class="text-jonathan font-medium text-xs opacity-70 mt-4">
+      <p class="text-jonathan font-medium text-xs opacity-70 mt-4 leading-5 font-['Barlow_Semi_Condensed']">
         “ Before joining the bootcamp, I’ve never written a line of code. I needed some structure from 
       professionals who can help me learn programming step by step. I was encouraged to enroll by a former 
       student of theirs who can only say wonderful things about the program. The entire curriculum and staff 
@@ -159,9 +168,9 @@
     
   </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.frontendmentor.io/profile/arunkumar0398" target="_blank">Arunkumar S</a>.
+  <div class="attribution font-['Barlow_Semi_Condensed'] text-sm">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="font-['Barlow_Semi_Condensed']" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/arunkumar0398" class="font-['Barlow_Semi_Condensed']" target="_blank">Arunkumar S</a>.
   </div>
 </body>
 </html>
